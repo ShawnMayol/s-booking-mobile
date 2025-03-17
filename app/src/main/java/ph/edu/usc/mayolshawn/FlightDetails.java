@@ -58,10 +58,10 @@ public class FlightDetails extends AppCompatActivity {
 
     private void saveBooking(String airline, String flightNumber, String duration, String departureTime, String arrivalTime, String price) {
         SharedPreferences sharedPreferences = getSharedPreferences("MyTrips", Context.MODE_PRIVATE);
-        Set<String> bookings = sharedPreferences.getStringSet("bookings", new HashSet<>());
+        Set<String> bookings = sharedPreferences.getStringSet("flight_bookings", new HashSet<>());
 
         bookings.add(airline + " | " + flightNumber + " | " + duration + " | " + departureTime + " → " + arrivalTime + " | " + price);
 
-        sharedPreferences.edit().putStringSet("bookings", bookings).apply();
+        sharedPreferences.edit().putStringSet("flight_bookings", bookings).apply();
     }
 }
