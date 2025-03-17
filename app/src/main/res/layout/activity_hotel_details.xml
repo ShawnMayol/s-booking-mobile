@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Orange Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#eb9701"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOTEL DETAILS"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tv_hotel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grand Manila Hotel"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <!-- Hotel Details Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <!-- Hotel Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_room_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Room Type: Deluxe Suite"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_checkin_checkout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check-in: March 25, 2025  |  Check-out: March 30, 2025"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_nights"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number of Nights: 5"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                android:gravity="center"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="₱3,500 per night"
+                android:textSize="24sp"
+                android:textColor="#EB9701"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <!-- Confirm Booking Button -->
+        <Button
+            android:id="@+id/btn_confirm_booking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONFIRM BOOKING"
+            android:backgroundTint="#EB9701"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</LinearLayout>
